@@ -1,9 +1,10 @@
 
-# 📦 OnePay API SDK (PHP + Guzzle)
+# 📦 OnePay API SDK (PHP)
 **Enterprise-Grade Payment Gateway SDK for OnePay Platform**
+<a href="https://one-pay.info">www.one-pay.info</a>
 
 <p align="center">
-  <img src="https://one-pay.info/assets/logo.png" width="180" />
+  <img src="https://one-pay.info/assets/images/onepay.svg" width="180" />
 </p>
 
 ## ⚡ نظرة عامة
@@ -40,7 +41,7 @@ OnePay-API-SDK هو حزمة PHP رسمية للتكامل السريع مع ن�
 - Composer  
 - امتداد cURL مفعّل  
 - OnePay API Token صالح  
-
+- Merchant ID
 ---
 
 ## 📥 التثبيت (Install)
@@ -153,7 +154,8 @@ postman/OnePay-FULL.postman_collection.json
 ---
 
 ## 👨‍💻 المطور
-**Essam Ali**  
+**Essam Dev**  
+https://essam-art.com
 GitHub: https://github.com/essam-art
 
 ---
