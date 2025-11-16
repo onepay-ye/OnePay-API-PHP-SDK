@@ -1,7 +1,7 @@
 
 # 📦 OnePay API SDK (PHP)
 **Enterprise-Grade Payment Gateway SDK for OnePay Platform**
-```
+---
 <a href="https://one-pay.info">www.one-pay.info</a>
 
 <p align="center">
@@ -157,7 +157,7 @@ postman/OnePay-FULL.postman_collection.json
 ## 👨‍💻 المطور
 **Essam Dev**  
 https://essam-art.com
-```
+---
 GitHub: https://github.com/essam-art
 
 ---
