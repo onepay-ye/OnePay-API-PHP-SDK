@@ -1,0 +1,156 @@
+{
+  "info": {
+    "name": "OnePay FULL Collection",
+    "_postman_id": "onepay-full-2025",
+    "description": "Full collection generated from OpenAPI",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Account Info",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "User-Agent",
+            "value": "ONEPAY/1.0"
+          }
+        ],
+        "url": {
+          "raw": "{{base_url}}/{{gateway}}/accountinfo",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "{{gateway}}",
+            "accountinfo"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Create Order",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "User-Agent",
+            "value": "ONEPAY/1.0"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"payment_name\": \"cashpay\",\n  \"currency_id\": \"USD\",\n  \"payerPhone\": \"967770000000\",\n  \"payerEmail\": \"buyer@example.com\",\n  \"beneficiaryList\": [\n    {\n      \"amount\": 100,\n      \"itemName\": \"ساعة\",\n      \"quantity\": 2\n    }\n  ],\n  \"des\": \"شراء ساعة\"\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/createorder",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "createorder"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Check Order",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "User-Agent",
+            "value": "ONEPAY/1.0"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"payment_name\": \"cashpay\",\n  \"payerPhone\": \"967770000000\",\n  \"payerEmail\": \"buyer@example.com\",\n  \"requestIdRes\": \"66ae540d9736d\",\n  \"orderID\": \"order.pay-379-5825\"\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/checkorder",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "checkorder"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get Invoices",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "User-Agent",
+            "value": "ONEPAY/1.0"
+          }
+        ],
+        "url": {
+          "raw": "{{base_url}}/{{gateway}}/invoice/list/{{payerEmail}}",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "{{gateway}}",
+            "invoice",
+            "list",
+            "{{payerEmail}}"
+          ]
+        }
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "https://one-pay.info/api/v2/sandbox"
+    },
+    {
+      "key": "gateway",
+      "value": "cashpay"
+    },
+    {
+      "key": "token",
+      "value": ""
+    },
+    {
+      "key": "payerEmail",
+      "value": "buyer@example.com"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "onepay/api-server",
+  "description": "OnePay proxy API server using Guzzle",
+  "require": {
+    "php": ">=7.4",
+    "guzzlehttp/guzzle": "^7.0",
+    "vlucas/phpdotenv": "^5.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "OnePay\\": "src/"
+    }
+  }
+}
