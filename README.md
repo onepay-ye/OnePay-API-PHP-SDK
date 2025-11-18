@@ -10,16 +10,16 @@
   <img src="https://one-pay.info/assets/images/onepay.svg" width="180" />
 </p>
 
-## ⚡ نظرة عامة
-OnePay-API-SDK هو حزمة PHP رسمية للتكامل السريع مع نظام الدفع OnePay.  
-يوفّر عمليات الدفع الأساسية:
+## ⚡ Overview
+OnePay-API-SDK is an official PHP package for rapid integration with the OnePay payment system.  
+It provides core payment operations:
 
-- ✔ تسجيل الدخول (Account Info)  
-- ✔ إنشاء طلب دفع (Create Order)  
-- ✔ التحقق من الطلب (Check Order)  
-- ✔ استرجاع الفواتير (Invoice List)
+- ✔ Account Information  
+- ✔ Create Payment Order  
+- ✔ Check Order Status  
+- ✔ Retrieve Invoices
 
-تم بناء SDK على:
+Built on:
 - **PHP 7.4+**
 - **GuzzleHTTP**
 - **PSR-4 Autoloading**
@@ -28,32 +28,33 @@ OnePay-API-SDK هو حزمة PHP رسمية للتكامل السريع مع ن�
 
 ---
 
-## 🚀 المميزات
-- ⚙ مبني بالكامل على **Guzzle HTTP Client**  
-- 🛡 يدعم **Validation داخلي لكل الباراميترات**  
-- 📡 يدعم Sandbox + Live mode  
-- ☁ جاهز للاستخدام كـ REST Proxy  
-- 🧩 سهل الربط في أي تطبيق PHP، Laravel، Symfony، أو نظام داخلي  
-- 🧪 مرفق **Postman Collection كامل**  
-- 📄 توثيق كامل داخل `docs/`  
+## 🚀 Features
+- ⚙ Fully built on **Guzzle HTTP Client**  
+- 🛡 Supports **Internal Validation for all parameters**  
+- 📡 Supports Sandbox + Live mode  
+- ☁ Ready to use as REST Proxy  
+- 🧩 Easy integration with any PHP app, Laravel, Symfony, or internal systems  
+- 🧪 Includes **Complete Postman Collection**  
+- 📄 Full documentation in `docs/`  
 
 ---
 
-## 🧱 المتطلبات
+## 🧱 Requirements
 - PHP >= 7.4  
 - Composer  
-- امتداد cURL مفعّل  
-- OnePay API Token صالح  
+- cURL extension enabled  
+- Valid OnePay API Token  
 - Merchant ID
+
 ---
 
-## 📥 التثبيت (Install)
+## 📥 Installation
 ```bash
 composer install
 cp .env.example .env
 ```
 
-ثم ضع توكن OnePay:
+Then set your OnePay token:
 ```
 ONEPAY_TOKEN=YOUR_JWT_TOKEN
 ONEPAY_SANDBOX=1
@@ -61,7 +62,7 @@ ONEPAY_SANDBOX=1
 
 ---
 
-## 🗂 بنية المشروع
+## Project Structure
 ```
 OnePay-API-SDK/
 ├── composer.json
@@ -85,8 +86,8 @@ OnePay-API-SDK/
 
 ---
 
-## 🔌 طريقة الاستخدام
-### تحميل Client
+## Usage
+### Load Client
 ```php
 use OnePay\OnePayGuzzle;
 
@@ -98,7 +99,7 @@ $client = new OnePayGuzzle(
 
 ---
 
-## 📘 أمثلة
+## Examples
 
 ### Account Info
 ```php
@@ -142,21 +143,20 @@ print_r($res);
 ---
 
 ## 🧪 Postman Collection
-موجود داخل:
+Located in:
 ```
 postman/OnePay-FULL.postman_collection.json
 ```
 
 ---
 
-## 🛡 حماية
-- لا ترفع .env  
-- استخدم HTTPS  
-- لا تشارك التوكن
-
+## Security
+Do not upload .env
+Use HTTPS
+Do not share your token
 ---
 
-## 👨‍💻 المطور
+## Developer
 **Essam Dev**  
 https://essam-art.com
 ---
