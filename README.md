@@ -1,5 +1,5 @@
 
-# 📦 OnePay API SDK (PHP)
+# OnePay API SDK (PHP)
 **Enterprise-Grade Payment Gateway SDK for OnePay Platform**<br>
 **One Pay RESTful Web API Reference (1.0.2) <a href="https://one-pay.info/documentation">one-pay.info/documentation</a>**
 
@@ -10,7 +10,7 @@
   <img src="https://one-pay.info/assets/images/onepay.svg" width="180" />
 </p>
 
-## ⚡ Overview
+## Overview
 OnePay-API-SDK is an official PHP package for rapid integration with the OnePay payment system.  
 It provides core payment operations:
 
@@ -28,18 +28,18 @@ Built on:
 
 ---
 
-## 🚀 Features
-- ⚙ Fully built on **Guzzle HTTP Client**  
-- 🛡 Supports **Internal Validation for all parameters**  
-- 📡 Supports Sandbox + Live mode  
-- ☁ Ready to use as REST Proxy  
-- 🧩 Easy integration with any PHP app, Laravel, Symfony, or internal systems  
-- 🧪 Includes **Complete Postman Collection**  
-- 📄 Full documentation in `docs/`  
+## Features
+- Fully built on **Guzzle HTTP Client**  
+- Supports **Internal Validation for all parameters**  
+- Supports Sandbox + Live mode  
+- Ready to use as REST Proxy  
+- Easy integration with any PHP app, Laravel, Symfony, or internal systems  
+- Includes **Complete Postman Collection**  
+- Full documentation in `docs/`  
 
 ---
 
-## 🧱 Requirements
+## Requirements
 - PHP >= 7.4  
 - Composer  
 - cURL extension enabled  
@@ -48,7 +48,7 @@ Built on:
 
 ---
 
-## 📥 Installation
+## Installation
 ```bash
 composer install
 cp .env.example .env
@@ -142,7 +142,7 @@ print_r($res);
 
 ---
 
-## 🧪 Postman Collection
+## Postman Collection
 Located in:
 ```
 postman/OnePay-FULL.postman_collection.json
@@ -151,9 +151,9 @@ postman/OnePay-FULL.postman_collection.json
 ---
 
 ## Security
-Do not upload .env
-Use HTTPS
-Do not share your token
+- Do not upload .env
+- Use HTTPS
+- Do not share your token
 ---
 
 ## Developer
